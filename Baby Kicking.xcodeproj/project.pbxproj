@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17113D571C1E0F6A002E45C0 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17113D561C1E0F6A002E45C0 /* SampleData.swift */; };
 		177A1BF01C1D501B00CC9E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */; };
 		177A1BF21C1D501B00CC9E20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1BF11C1D501B00CC9E20 /* ViewController.swift */; };
 		177A1BF51C1D501B00CC9E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A1BF31C1D501B00CC9E20 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		177A1BFA1C1D501B00CC9E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A1BF81C1D501B00CC9E20 /* LaunchScreen.storyboard */; };
 		177A1C051C1D501B00CC9E20 /* Baby_KickingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1C041C1D501B00CC9E20 /* Baby_KickingTests.swift */; };
 		177A1C101C1D501B00CC9E20 /* Baby_KickingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1C0F1C1D501B00CC9E20 /* Baby_KickingUITests.swift */; };
+		177A1C481C1D60F100CC9E20 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1C471C1D60F100CC9E20 /* PlayersViewController.swift */; };
+		177A1C4A1C1D616600CC9E20 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1C491C1D616600CC9E20 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17113D561C1E0F6A002E45C0 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		177A1BEC1C1D501B00CC9E20 /* Baby Kicking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Kicking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177A1BF11C1D501B00CC9E20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		177A1C0B1C1D501B00CC9E20 /* Baby KickingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baby KickingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177A1C0F1C1D501B00CC9E20 /* Baby_KickingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baby_KickingUITests.swift; sourceTree = "<group>"; };
 		177A1C111C1D501B00CC9E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177A1C471C1D60F100CC9E20 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		177A1C491C1D616600CC9E20 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */,
 				177A1BF11C1D501B00CC9E20 /* ViewController.swift */,
 				177A1BF31C1D501B00CC9E20 /* Main.storyboard */,
+				177A1C471C1D60F100CC9E20 /* PlayersViewController.swift */,
+				177A1C491C1D616600CC9E20 /* Player.swift */,
+				17113D561C1E0F6A002E45C0 /* SampleData.swift */,
 				177A1BF61C1D501B00CC9E20 /* Assets.xcassets */,
 				177A1BF81C1D501B00CC9E20 /* LaunchScreen.storyboard */,
 				177A1BFB1C1D501B00CC9E20 /* Info.plist */,
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177A1C4A1C1D616600CC9E20 /* Player.swift in Sources */,
 				177A1BF21C1D501B00CC9E20 /* ViewController.swift in Sources */,
 				177A1BF01C1D501B00CC9E20 /* AppDelegate.swift in Sources */,
+				17113D571C1E0F6A002E45C0 /* SampleData.swift in Sources */,
+				177A1C481C1D60F100CC9E20 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				177A1C161C1D501B00CC9E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		177A1C171C1D501B00CC9E20 /* Build configuration list for PBXNativeTarget "Baby KickingTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				177A1C191C1D501B00CC9E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		177A1C1A1C1D501B00CC9E20 /* Build configuration list for PBXNativeTarget "Baby KickingUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				177A1C1C1C1D501B00CC9E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
