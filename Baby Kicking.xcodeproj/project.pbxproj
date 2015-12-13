@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		17113D571C1E0F6A002E45C0 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17113D561C1E0F6A002E45C0 /* SampleData.swift */; };
+		17113D5B1C1E1E24002E45C0 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17113D5A1C1E1E24002E45C0 /* PlayerCell.swift */; };
+		17113D5E1C1E2974002E45C0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17113D5C1C1E2974002E45C0 /* Realm.framework */; };
+		17113D5F1C1E2974002E45C0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17113D5D1C1E2974002E45C0 /* RealmSwift.framework */; };
 		177A1BF01C1D501B00CC9E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */; };
-		177A1BF21C1D501B00CC9E20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1BF11C1D501B00CC9E20 /* ViewController.swift */; };
+		177A1BF21C1D501B00CC9E20 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1BF11C1D501B00CC9E20 /* RecordViewController.swift */; };
 		177A1BF51C1D501B00CC9E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A1BF31C1D501B00CC9E20 /* Main.storyboard */; };
 		177A1BF71C1D501B00CC9E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177A1BF61C1D501B00CC9E20 /* Assets.xcassets */; };
 		177A1BFA1C1D501B00CC9E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A1BF81C1D501B00CC9E20 /* LaunchScreen.storyboard */; };
@@ -38,9 +41,12 @@
 
 /* Begin PBXFileReference section */
 		17113D561C1E0F6A002E45C0 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		17113D5A1C1E1E24002E45C0 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		17113D5C1C1E2974002E45C0 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		17113D5D1C1E2974002E45C0 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		177A1BEC1C1D501B00CC9E20 /* Baby Kicking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Kicking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		177A1BF11C1D501B00CC9E20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		177A1BF11C1D501B00CC9E20 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		177A1BF41C1D501B00CC9E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		177A1BF61C1D501B00CC9E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177A1BF91C1D501B00CC9E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17113D5E1C1E2974002E45C0 /* Realm.framework in Frameworks */,
+				17113D5F1C1E2974002E45C0 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,8 @@
 		177A1BE31C1D501B00CC9E20 = {
 			isa = PBXGroup;
 			children = (
+				17113D5C1C1E2974002E45C0 /* Realm.framework */,
+				17113D5D1C1E2974002E45C0 /* RealmSwift.framework */,
 				177A1BEE1C1D501B00CC9E20 /* Baby Kicking */,
 				177A1C031C1D501B00CC9E20 /* Baby KickingTests */,
 				177A1C0E1C1D501B00CC9E20 /* Baby KickingUITests */,
@@ -104,7 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */,
-				177A1BF11C1D501B00CC9E20 /* ViewController.swift */,
+				17113D5A1C1E1E24002E45C0 /* PlayerCell.swift */,
+				177A1BF11C1D501B00CC9E20 /* RecordViewController.swift */,
 				177A1BF31C1D501B00CC9E20 /* Main.storyboard */,
 				177A1C471C1D60F100CC9E20 /* PlayersViewController.swift */,
 				177A1C491C1D616600CC9E20 /* Player.swift */,
@@ -144,6 +155,7 @@
 				177A1BE81C1D501B00CC9E20 /* Sources */,
 				177A1BE91C1D501B00CC9E20 /* Frameworks */,
 				177A1BEA1C1D501B00CC9E20 /* Resources */,
+				17113D601C1E29A4002E45C0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,13 +272,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17113D601C1E29A4002E45C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		177A1BE81C1D501B00CC9E20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17113D5B1C1E1E24002E45C0 /* PlayerCell.swift in Sources */,
 				177A1C4A1C1D616600CC9E20 /* Player.swift in Sources */,
-				177A1BF21C1D501B00CC9E20 /* ViewController.swift in Sources */,
+				177A1BF21C1D501B00CC9E20 /* RecordViewController.swift in Sources */,
 				177A1BF01C1D501B00CC9E20 /* AppDelegate.swift in Sources */,
 				17113D571C1E0F6A002E45C0 /* SampleData.swift in Sources */,
 				177A1C481C1D60F100CC9E20 /* PlayersViewController.swift in Sources */,
@@ -411,6 +442,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Baby Kicking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.axcoto.Baby-Kicking";
@@ -422,6 +457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Baby Kicking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.axcoto.Baby-Kicking";

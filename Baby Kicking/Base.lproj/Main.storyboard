@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" id="Tsl-Ye-I29">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" id="Tsl-Ye-I29" customClass="PlayerCell" customModule="Baby_Kicking" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tsl-Ye-I29" id="aiy-EG-2YB">
@@ -63,6 +63,11 @@
                                         <constraint firstItem="Hzq-wN-zqF" firstAttribute="top" secondItem="aiy-EG-2YB" secondAttribute="topMargin" id="cgs-cc-Fdi"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameLabel" destination="r3K-rO-UOj" id="5gq-Ie-2Y3"/>
+                                    <outlet property="nameLabel" destination="wUJ-WP-he2" id="mI6-hd-gst"/>
+                                    <outlet property="ratingImageView" destination="cyX-QH-gPG" id="I8Y-Gq-mdO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -77,20 +82,30 @@
             </objects>
             <point key="canvasLocation" x="1228.5" y="13.5"/>
         </scene>
-        <!--Chart-->
+        <!--Record-->
         <scene sceneID="XLJ-rd-6c0">
             <objects>
-                <viewController id="Gft-8M-OtQ" sceneMemberID="viewController">
+                <viewController id="Gft-8M-OtQ" customClass="RecordViewController" customModule="Baby_Kicking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M5J-4f-b41"/>
                         <viewControllerLayoutGuide type="bottom" id="ZMl-1r-aw9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8cD-Xf-hJo">
+                    <view key="view" contentMode="scaleToFill" id="8cD-Xf-hJo" customClass="Rec">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rh-r6-iFZ">
+                                <rect key="frame" x="131" y="109" width="51" height="30"/>
+                                <state key="normal" title="Kicking"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIQ-No-p8L">
+                                <rect key="frame" x="131" y="438" width="83" height="30"/>
+                                <state key="normal" title="Past kicking"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chart" image="Gestures" id="IHs-oi-Rr4"/>
+                    <tabBarItem key="tabBarItem" title="Record" image="Gestures" id="IHs-oi-Rr4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROA-9P-G1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,19 +122,19 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BZX-Uv-gZb" kind="relationship" relationship="viewControllers" id="yHD-HX-8jY"/>
                         <segue destination="Gft-8M-OtQ" kind="relationship" relationship="viewControllers" id="CXZ-xJ-3Dx"/>
+                        <segue destination="BZX-Uv-gZb" kind="relationship" relationship="viewControllers" id="yHD-HX-8jY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxC-gt-4Hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-326" y="333"/>
         </scene>
-        <!--Player-->
+        <!--Chart-->
         <scene sceneID="QWB-VG-M2e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BZX-Uv-gZb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Player" image="Players" id="YUj-hH-s5i"/>
+                    <tabBarItem key="tabBarItem" title="Chart" image="Players" id="YUj-hH-s5i"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s1F-JE-HYN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
