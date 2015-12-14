@@ -19,27 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-Sj-U0u" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="12" y="64" width="343" height="554"/>
+                                <rect key="frame" x="16" y="64" width="343" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="554" id="YlK-7F-sty"/>
+                                    <constraint firstAttribute="width" constant="343" id="iqx-5o-mJj"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6dS-En-aRs" firstAttribute="top" secondItem="dJF-Sj-U0u" secondAttribute="bottom" id="Dtg-ys-T30"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dJF-Sj-U0u" secondAttribute="trailing" id="FGd-bd-aUi"/>
-                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="leading" secondItem="Pp4-Fa-Ebp" secondAttribute="leadingMargin" id="Fk5-ui-iFG"/>
-                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="top" secondItem="HPl-YC-zXq" secondAttribute="bottom" id="GoR-1d-hcr"/>
-                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="leading" secondItem="Pp4-Fa-Ebp" secondAttribute="leadingMargin" id="Tdq-VU-MLy"/>
-                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="leading" secondItem="Pp4-Fa-Ebp" secondAttribute="leadingMargin" id="uPi-sB-tYg"/>
+                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="leading" secondItem="Pp4-Fa-Ebp" secondAttribute="leadingMargin" constant="-4" id="0WG-g2-HOy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dJF-Sj-U0u" secondAttribute="trailing" constant="-4" id="Hnd-MS-zLd"/>
+                            <constraint firstItem="6dS-En-aRs" firstAttribute="top" secondItem="dJF-Sj-U0u" secondAttribute="bottom" constant="20" id="Uch-dE-eIg"/>
+                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="top" secondItem="HPl-YC-zXq" secondAttribute="bottom" id="cfX-7w-v2o"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hah-NJ-2Yn">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LiN-0a-YS1">
-                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <rect key="frame" x="48" y="7" width="280" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Last hour"/>
                             <connections>
@@ -50,6 +48,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="chartView" destination="dJF-Sj-U0u" id="wW4-pr-L1u"/>
+                        <outlet property="timePickerButton" destination="LiN-0a-YS1" id="7jk-6d-RFA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0m-SI-6aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
