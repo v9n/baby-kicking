@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Kick: Object {
+    dynamic var createdAt: NSDate? = nil
+    dynamic var count = 1
+}

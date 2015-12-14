@@ -11,6 +11,10 @@
 		17113D5B1C1E1E24002E45C0 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17113D5A1C1E1E24002E45C0 /* PlayerCell.swift */; };
 		17113D5E1C1E2974002E45C0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17113D5C1C1E2974002E45C0 /* Realm.framework */; };
 		17113D5F1C1E2974002E45C0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17113D5D1C1E2974002E45C0 /* RealmSwift.framework */; };
+		17113D631C1E2CDA002E45C0 /* Kick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17113D621C1E2CDA002E45C0 /* Kick.swift */; };
+		17113D651C1E365C002E45C0 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17113D641C1E365C002E45C0 /* ChartViewController.swift */; };
+		17113D671C1E389D002E45C0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17113D661C1E389D002E45C0 /* Charts.framework */; };
+		17113D6A1C1E5553002E45C0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17113D691C1E5553002E45C0 /* Date.swift */; };
 		177A1BF01C1D501B00CC9E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */; };
 		177A1BF21C1D501B00CC9E20 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1BF11C1D501B00CC9E20 /* RecordViewController.swift */; };
 		177A1BF51C1D501B00CC9E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A1BF31C1D501B00CC9E20 /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		17113D5A1C1E1E24002E45C0 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		17113D5C1C1E2974002E45C0 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		17113D5D1C1E2974002E45C0 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		17113D621C1E2CDA002E45C0 /* Kick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kick.swift; sourceTree = "<group>"; };
+		17113D641C1E365C002E45C0 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		17113D661C1E389D002E45C0 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		17113D691C1E5553002E45C0 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		177A1BEC1C1D501B00CC9E20 /* Baby Kicking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Kicking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177A1BF11C1D501B00CC9E20 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +76,7 @@
 			files = (
 				17113D5E1C1E2974002E45C0 /* Realm.framework in Frameworks */,
 				17113D5F1C1E2974002E45C0 /* RealmSwift.framework in Frameworks */,
+				17113D671C1E389D002E45C0 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +97,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17113D611C1E2B69002E45C0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				17113D621C1E2CDA002E45C0 /* Kick.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
 		177A1BE31C1D501B00CC9E20 = {
 			isa = PBXGroup;
 			children = (
+				17113D661C1E389D002E45C0 /* Charts.framework */,
 				17113D5C1C1E2974002E45C0 /* Realm.framework */,
 				17113D5D1C1E2974002E45C0 /* RealmSwift.framework */,
 				177A1BEE1C1D501B00CC9E20 /* Baby Kicking */,
@@ -113,9 +131,12 @@
 		177A1BEE1C1D501B00CC9E20 /* Baby Kicking */ = {
 			isa = PBXGroup;
 			children = (
+				17113D611C1E2B69002E45C0 /* Repository */,
 				177A1BEF1C1D501B00CC9E20 /* AppDelegate.swift */,
 				17113D5A1C1E1E24002E45C0 /* PlayerCell.swift */,
+				17113D691C1E5553002E45C0 /* Date.swift */,
 				177A1BF11C1D501B00CC9E20 /* RecordViewController.swift */,
+				17113D641C1E365C002E45C0 /* ChartViewController.swift */,
 				177A1BF31C1D501B00CC9E20 /* Main.storyboard */,
 				177A1C471C1D60F100CC9E20 /* PlayersViewController.swift */,
 				177A1C491C1D616600CC9E20 /* Player.swift */,
@@ -281,6 +302,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
 			);
 			outputPaths = (
 			);
@@ -295,11 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17113D631C1E2CDA002E45C0 /* Kick.swift in Sources */,
 				17113D5B1C1E1E24002E45C0 /* PlayerCell.swift in Sources */,
 				177A1C4A1C1D616600CC9E20 /* Player.swift in Sources */,
 				177A1BF21C1D501B00CC9E20 /* RecordViewController.swift in Sources */,
 				177A1BF01C1D501B00CC9E20 /* AppDelegate.swift in Sources */,
+				17113D651C1E365C002E45C0 /* ChartViewController.swift in Sources */,
 				17113D571C1E0F6A002E45C0 /* SampleData.swift in Sources */,
+				17113D6A1C1E5553002E45C0 /* Date.swift in Sources */,
 				177A1C481C1D60F100CC9E20 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,1 +1,2 @@
- github "realm/realm-cocoa" 
+github "realm/realm-cocoa"
+github "danielgindi/ios-charts" ~> 2.1.6
