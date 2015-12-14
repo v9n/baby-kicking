@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Chart-->
+        <!--Chart View Controller-->
         <scene sceneID="IRC-XV-BKV">
             <objects>
                 <viewController id="ANq-IP-sAY" customClass="ChartViewController" customModule="Baby_Kicking" sceneMemberID="viewController">
@@ -21,6 +21,9 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-Sj-U0u" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="12" y="64" width="343" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="554" id="YlK-7F-sty"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,9 +32,21 @@
                             <constraint firstAttribute="trailingMargin" secondItem="dJF-Sj-U0u" secondAttribute="trailing" id="FGd-bd-aUi"/>
                             <constraint firstItem="dJF-Sj-U0u" firstAttribute="leading" secondItem="Pp4-Fa-Ebp" secondAttribute="leadingMargin" id="Fk5-ui-iFG"/>
                             <constraint firstItem="dJF-Sj-U0u" firstAttribute="top" secondItem="HPl-YC-zXq" secondAttribute="bottom" id="GoR-1d-hcr"/>
+                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="leading" secondItem="Pp4-Fa-Ebp" secondAttribute="leadingMargin" id="Tdq-VU-MLy"/>
+                            <constraint firstItem="dJF-Sj-U0u" firstAttribute="leading" secondItem="Pp4-Fa-Ebp" secondAttribute="leadingMargin" id="uPi-sB-tYg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chart" id="hah-NJ-2Yn"/>
+                    <navigationItem key="navigationItem" id="hah-NJ-2Yn">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LiN-0a-YS1">
+                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Last hour"/>
+                            <connections>
+                                <action selector="changeGroupBy:" destination="ANq-IP-sAY" eventType="touchUpInside" id="TLi-y2-ayt"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="chartView" destination="dJF-Sj-U0u" id="wW4-pr-L1u"/>
@@ -39,9 +54,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0m-SI-6aU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.5" y="1026.5"/>
+            <point key="canvasLocation" x="734.5" y="895.5"/>
         </scene>
-        <!--Record-->
+        <!--Foot-->
         <scene sceneID="XLJ-rd-6c0">
             <objects>
                 <viewController id="Gft-8M-OtQ" customClass="RecordViewController" customModule="Baby_Kicking" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,21 +68,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIQ-No-p8L">
-                                <rect key="frame" x="131" y="438" width="83" height="30"/>
-                                <state key="normal" title="Past kicking"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rh-r6-iFZ">
-                                <rect key="frame" x="119" y="97" width="51" height="30"/>
-                                <state key="normal" title="Kicking"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rh-r6-iFZ">
+                                <rect key="frame" x="103" y="249" width="170" height="170"/>
+                                <state key="normal" image="Bell"/>
                                 <connections>
                                     <action selector="recordKick:" destination="Gft-8M-OtQ" eventType="touchUpInside" id="UqQ-21-asn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-dX-Z2Z">
+                                <rect key="frame" x="151" y="490" width="83" height="30"/>
+                                <state key="normal" title="Past kicking"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Rh-r6-iFZ" firstAttribute="centerY" secondItem="8cD-Xf-hJo" secondAttribute="centerY" id="TOE-NT-fzN"/>
+                            <constraint firstItem="0Rh-r6-iFZ" firstAttribute="centerX" secondItem="8cD-Xf-hJo" secondAttribute="centerX" id="nq8-fx-gcC"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Record" image="Gestures" id="IHs-oi-Rr4"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Foot" image="Foot" id="IHs-oi-Rr4" colorLabel="IBBuiltInLabel-Red"/>
                     <connections>
                         <outlet property="recordButton" destination="0Rh-r6-iFZ" id="ka3-lc-iuL"/>
                     </connections>
@@ -99,7 +118,7 @@
         <scene sceneID="KOU-wJ-wPD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LOU-Cv-4H6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="k5B-Js-AhR"/>
+                    <tabBarItem key="tabBarItem" title="History" image="Chart" id="k5B-Js-AhR" colorLabel="IBBuiltInLabel-Red"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gOd-VE-E9a">
@@ -113,10 +132,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mey-i8-JJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454.5" y="964.5"/>
+            <point key="canvasLocation" x="175.5" y="975.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Gestures" width="30" height="30"/>
+        <image name="Bell" width="170" height="170"/>
+        <image name="Chart" width="30" height="30"/>
+        <image name="Foot" width="30" height="30"/>
     </resources>
 </document>

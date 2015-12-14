@@ -22,17 +22,63 @@ class ChartViewController: UIViewController {
         drawchart(chartData.time, values: chartData.data)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         let chartData = calculateDataPoint()
         drawchart(chartData.time, values: chartData.data)
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func changeGroupBy(sender: UIButton) {
+
+        let alertController = UIAlertController(title: "Time range", message: "Change time range", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "Last hour", style: .Cancel) { (action) in
+            // ...
+        }
+        alertController.addAction(cancelAction)
+        
+        let OKAction = UIAlertAction(title: "Last 8 hours", style: .Default) { (action) in
+            // ...
+        }
+        alertController.addAction(OKAction)
+        
+        let Hour12Action = UIAlertAction(title: "Last 12 hours", style: .Default) { (action) in
+            // ...
+        }
+        alertController.addAction(Hour12Action)
+
+        let DayAction = UIAlertAction(title: "Last day", style: .Default) { (action) in
+            // ...
+        }
+        alertController.addAction(DayAction)
+        
+        let Day3Action = UIAlertAction(title: "Last 3 days", style: .Default) { (action) in
+            // ...
+        }
+        alertController.addAction(Day3Action)
+        
+        let Day7Action = UIAlertAction(title: "Last 7 days", style: .Default) { (action) in
+            // ...
+        }
+        alertController.addAction(Day7Action)
+        
+        
+        self.presentViewController(alertController, animated: true) {
+            // ...
+        }
+        
+        
+    }
+    
     
     func calculateDataPoint() -> (time: [String], data: [Double]){
         let kicks = realm.objects(Kick)
@@ -88,7 +134,9 @@ class ChartViewController: UIViewController {
         let chartData = BarChartData(xVals: dataPoints, dataSet: chartDataSet)
         chartView.data = chartData
     }
-
+    
+    
+    
     /*
     // MARK: - Navigation
 
