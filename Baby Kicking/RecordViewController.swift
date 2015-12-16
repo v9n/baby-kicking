@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
-import Realm
 
 class RecordViewController: UIViewController {
     @IBOutlet weak var recordButton: UIButton!
@@ -26,15 +24,10 @@ class RecordViewController: UIViewController {
     }
 
     @IBAction func recordKick(sender: UIButton) {
-        print("Click record button")
         let kick = Kick()
         kick.count = 1
         kick.createdAt = NSDate()
-        print(kick.createdAt)
-        let realm = try! Realm()
-        try! realm.write {
-            realm.add(kick)
-        }
+        kick.save()
     }
 
 }

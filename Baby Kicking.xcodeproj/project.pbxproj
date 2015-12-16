@@ -24,6 +24,7 @@
 		177A1C101C1D501B00CC9E20 /* Baby_KickingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1C0F1C1D501B00CC9E20 /* Baby_KickingUITests.swift */; };
 		177A1C481C1D60F100CC9E20 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1C471C1D60F100CC9E20 /* PlayersViewController.swift */; };
 		177A1C4A1C1D616600CC9E20 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A1C491C1D616600CC9E20 /* Player.swift */; };
+		17AAECED1C1F3EC9002CC53E /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAECEC1C1F3EC9002CC53E /* Chart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		177A1C111C1D501B00CC9E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177A1C471C1D60F100CC9E20 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		177A1C491C1D616600CC9E20 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		17AAECEC1C1F3EC9002CC53E /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				17113D621C1E2CDA002E45C0 /* Kick.swift */,
+				17AAECEC1C1F3EC9002CC53E /* Chart.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				17113D631C1E2CDA002E45C0 /* Kick.swift in Sources */,
 				17113D5B1C1E1E24002E45C0 /* PlayerCell.swift in Sources */,
+				17AAECED1C1F3EC9002CC53E /* Chart.swift in Sources */,
 				177A1C4A1C1D616600CC9E20 /* Player.swift in Sources */,
 				177A1BF21C1D501B00CC9E20 /* RecordViewController.swift in Sources */,
 				177A1BF01C1D501B00CC9E20 /* AppDelegate.swift in Sources */,
