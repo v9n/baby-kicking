@@ -67,21 +67,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rh-r6-iFZ">
-                                <rect key="frame" x="103" y="249" width="170" height="170"/>
-                                <state key="normal" image="Bell"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rh-r6-iFZ">
+                                <rect key="frame" x="103" y="107" width="170" height="170"/>
+                                <state key="normal" image="Foot"/>
                                 <connections>
                                     <action selector="recordKick:" destination="Gft-8M-OtQ" eventType="touchUpInside" id="UqQ-21-asn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-dX-Z2Z">
-                                <rect key="frame" x="151" y="490" width="83" height="30"/>
-                                <state key="normal" title="Past kicking"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-dX-Z2Z">
+                                <rect key="frame" x="147" y="180" width="91" height="30"/>
+                                <state key="normal" title="Add past kicking"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDo-4p-HHA">
+                                <rect key="frame" x="163" y="218" width="50" height="30"/>
+                                <state key="normal" title="History"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0Rh-r6-iFZ" firstAttribute="centerY" secondItem="8cD-Xf-hJo" secondAttribute="centerY" id="TOE-NT-fzN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nlT-dX-Z2Z" secondAttribute="trailing" constant="121" id="QVX-Pl-lGf"/>
+                            <constraint firstItem="nlT-dX-Z2Z" firstAttribute="leading" secondItem="8cD-Xf-hJo" secondAttribute="leadingMargin" constant="131" id="b3G-9i-yU3"/>
                             <constraint firstItem="0Rh-r6-iFZ" firstAttribute="centerX" secondItem="8cD-Xf-hJo" secondAttribute="centerX" id="nq8-fx-gcC"/>
                         </constraints>
                     </view>
@@ -135,7 +140,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bell" width="170" height="170"/>
         <image name="Chart" width="30" height="30"/>
         <image name="Foot" width="30" height="30"/>
     </resources>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayersViewController: UITableViewController {
+class HistoryViewController: UITableViewController {
     var players:[Player] = playersData
     
     override func viewDidLoad() {

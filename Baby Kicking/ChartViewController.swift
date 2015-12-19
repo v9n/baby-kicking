@@ -69,6 +69,7 @@ class ChartViewController: UIViewController {
     
     func refreshChart() {
         let chartData = chart.calculateDataPoint()
+        print(chartData)
         drawchart(chartData.time, values: chartData.data)
     }
     
